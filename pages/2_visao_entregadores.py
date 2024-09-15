@@ -12,7 +12,7 @@ st.set_page_config(page_title = "Entregadores",page_icon="U+1F4E5", layout="wide
 # Codigo
 #======
 
-df = pd.read_csv("c:/Users/caioc/Documents/FACULDADE/CURSO_DATA_SCIENCE_COMUNIDADE_DS/Formação_DS/Python_para_Analise_de_Dados/Ciclo_V/Exercicios/train.csv")
+df = pd.read_csv("dataset/train.csv")
 
 df_delivery_person_age_new = df["Delivery_person_Age"] != "NaN "
 df = df.loc[df_delivery_person_age_new,:]
